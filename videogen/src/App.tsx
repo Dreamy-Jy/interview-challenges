@@ -93,7 +93,6 @@ function useVTTFile(captions: DbRow[]) {
     if (captions.length === 0) return;
 
     const vttContent = generateVTTFromDbRow(captions);
-    console.log("vttContent: ", vttContent);
     const blob = new Blob([vttContent], { type: 'text/vtt' });
     const url = URL.createObjectURL(blob);
     setVttUrl(url);

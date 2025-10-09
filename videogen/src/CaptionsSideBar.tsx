@@ -46,7 +46,7 @@ export function CaptionsSideBar({ captions, videoTime }: CaptionsSideBarProps) {
     const activeCaption = useActiveCaption(captions, videoTime);
 
     return (
-        <aside className="flex-shrink-0 bg-gray-100 overflow-auto h-full">
+        <aside className="flex-1 bg-gray-100 overflow-auto lg:flex-none">
             {captions.map((caption, index) => (
                 <CaptionSection
                     key={caption.id}

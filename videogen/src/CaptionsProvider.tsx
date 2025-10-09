@@ -84,9 +84,7 @@ export function CaptionsProvider({ children }: { children: ReactNode }) {
                 const results = await dbClient.getAllRows();
                 const captions = results.map(result => result.result);
                 dispatch({ type: 'SET_CAPTIONS', payload: captions });
-                console.log('Fetched captions:', captions);
             } catch (error) {
-                console.error('Failed to fetch captions:', error);
                 dispatch({ type: 'SET_LOADING', payload: false });
             }
         };
