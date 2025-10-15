@@ -1,0 +1,134 @@
+import "./App.css";
+import { useEffect, useState } from "react";
+
+const Email = ({ email }) => {
+  return (
+    <div>
+      <h1>{email.subject}</h1>
+      <b>{email.address}</b>
+      <p>{email.time}</p>
+    </div>
+  );
+};
+
+const EmailListItem = ({ email, onSelectFn, selected, onClickEmail }) => {
+  return (
+    <div
+      className="email-list-item"
+      style={{
+        backgroundColor: email.read ? "lightgrey" : "white",
+      }}
+    >
+      <input type="checkbox" onClick={onSelectFn} checked={selected} />
+      <div onClick={onClickEmail}>
+        <Email email={email} />
+      </div>
+    </div>
+  );
+};
+
+const EmailListPane = ({ emails, markEmailFn, onClickEmail }) => {
+  const [selectedEmails, setSelectedEmails] = useState([]);
+  const setEmailsTo =
+    selectedEmails.length > 0 &&
+    selectedEmails.every((id) => {
+      return emails[id - 1].read;
+    });
+
+  return (
+    <div className="email-list">
+      <button
+        onClick={() =>
+          selectedEmails.forEach((emailID) => {
+            markEmailFn(emailID, !setEmailsTo);
+          })
+        }
+      >
+        {setEmailsTo ? "Mark As Unread" : "Mark As Read"}
+      </button>
+      <div>
+        {emails.map((e) => (
+          <EmailListItem
+            email={e}
+            onSelectFn={() => {
+              setSelectedEmails((prevState) =>
+                selectedEmails.includes(e.id)
+                  ? prevState.filter((id) => id !== e.id)
+                  : prevState.concat(e.id),
+              );
+            }}
+            selected={selectedEmails.includes(e.id)}
+            onClickEmail={() => {
+              onClickEmail(e.id);
+            }}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const EmailPane = ({ email }) => {
+  const ui =
+    JSON.stringify(email) === "{}" ? (
+      <div>No email selected</div>
+    ) : (
+      <div>
+        <Email email={email} />
+        <div>{email.message}</div>
+      </div>
+    );
+
+  return ui;
+};
+
+function App() {
+  const [emails, setEmails] = useState([]);
+  const [selectedEmail, setSelectedEmail] = useState(-1);
+
+  useEffect(() => {
+    fetch(
+      "https://gist.githubusercontent.com/Jsarihan/d5f8cd2d159d676fbfb2fab94750635e/raw/b54cc1bd819b157a93bde00fe059825002f1f602/email.json",
+    )
+      .then((resp) => resp.json())
+      .then((json) => {
+        setEmails(
+          json.map((e) => ({ ...e, read: e.read === "true" ? true : false })),
+        );
+      });
+  }, []);
+
+  return (
+    <div className="App">
+      <EmailListPane
+        emails={emails}
+        markEmailFn={(targetEmailID, read) => {
+          setEmails((prevState) =>
+            prevState.map((email) => {
+              if (email.id !== targetEmailID) {
+                return { ...email };
+              }
+
+              return { ...email, read };
+            }),
+          );
+        }}
+        onClickEmail={(targetEmailID) => {
+          setSelectedEmail(targetEmailID);
+          setEmails((prevState) =>
+            prevState.map((email) => {
+              if (email.id !== targetEmailID) {
+                return { ...email };
+              }
+
+              return { ...email, read: true };
+            }),
+          );
+        }}
+      />
+      <EmailPane email={selectedEmail < 0 ? {} : emails[selectedEmail - 1]} />
+    </div>
+  );
+}
+
+export default App;
