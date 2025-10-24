@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "Inventory running low on SKU-A12",
+    "priority": "HIGH",
+    "category": "Inventory",
+    "confidence": 0.87,
+    "date": "2025-07-28",
+    "evidence": "https://example.com/sku-a12-sales-chart.png",
+    "suggestedAction": "Order 500 more units before Friday."
+  },
+  {
+    "id": 2,
+    "title": "Spike in 5-star reviews after TikTok mention",
+    "priority": "MID",
+    "category": "Marketing",
+    "confidence": 0.81,
+    "date": "2025-07-28",
+    "evidence": "https://example.com/review-trend.png",
+    "suggestedAction": "Boost TikTok post and reply to top comments."
+  },
+  {
+    "id": 3,
+    "title": "Website checkout abandonment rate increased by 15%",
+    "priority": "HIGH",
+    "category": "E-commerce",
+    "confidence": 0.92,
+    "date": "2025-07-29",
+    "evidence": "https://example.com/analytics-checkout-flow.png",
+    "suggestedAction": "Investigate potential user experience issues in the checkout process."
+  },
+  {
+    "id": 4,
+    "title": "New competitor offering similar product at lower price",
+    "priority": "HIGH",
+    "category": "Competitive Analysis",
+    "confidence": 0.95,
+    "date": "2025-07-29",
+    "evidence": "https://example.com/competitor-price-scan.png",
+    "suggestedAction": "Evaluate pricing strategy and consider a limited-time promotional offer."
+  },
+  {
+    "id": 5,
+    "title": "Customer support tickets for 'login issues' up 20%",
+    "priority": "MID",
+    "category": "Customer Service",
+    "confidence": 0.78,
+    "date": "2025-07-30",
+    "evidence": "https://example.com/support-ticket-report.png",
+    "suggestedAction": "Review recent code deployments related to user authentication."
+  },
+  {
+    "id": 6,
+    "title": "Blog post \"Top 5 Summer Trends\" performance exceeded expectations",
+    "priority": "LOW",
+    "category": "Content",
+    "confidence": 0.85,
+    "date": "2025-07-30",
+    "evidence": "https://example.com/blog-traffic-analytics.png",
+    "suggestedAction": "Plan follow-up content on a similar topic and share on social media."
+  },
+  {
+    "id": 7,
+    "title": "Seasonal forecast shows a 30% increase in demand for waterproof jackets",
+    "priority": "HIGH",
+    "category": "Inventory",
+    "confidence": 0.90,
+    "date": "2025-07-31",
+    "evidence": "https://example.com/weather-forecast-report.png",
+    "suggestedAction": "Increase stock of waterproof jackets by 25% for Q3."
+  },
+  {
+    "id": 8,
+    "title": "Email campaign 'Summer Sale' open rate is below average",
+    "priority": "MID",
+    "category": "Marketing",
+    "confidence": 0.75,
+    "date": "2025-07-31",
+    "evidence": "https://example.com/email-marketing-report.png",
+    "suggestedAction": "A/B test different subject lines and send a follow-up email."
+  },
+  {
+    "id": 9,
+    "title": "Server response time for product pages has slowed by 1.2 seconds",
+    "priority": "HIGH",
+    "category": "Technical",
+    "confidence": 0.96,
+    "date": "2025-08-01",
+    "evidence": "https://example.com/performance-monitoring-dashboard.png",
+    "suggestedAction": "Review recent code deployments and database queries for performance bottlenecks."
+  },
+  {
+    "id": 10,
+    "title": "Positive sentiment analysis on social media about new product launch",
+    "priority": "LOW",
+    "category": "Public Relations",
+    "confidence": 0.88,
+    "date": "2025-08-01",
+    "evidence": "https://example.com/social-media-sentiment-report.png",
+    "suggestedAction": "Engage with positive mentions and share user-generated content."
+  }
+]

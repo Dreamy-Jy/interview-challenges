@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* selector for class named main-content */
+.main-content {
+    /* Styles for placing the element in it's container */
+    @apply bg-[#fcfcfc] border-[#00000024] border-[1px] grow;
+}

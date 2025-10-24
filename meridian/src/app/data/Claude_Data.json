@@ -1,0 +1,102 @@
+[
+ {
+   "id": 3,
+   "title": "Website conversion rate dropped 15% this week",
+   "priority": "HIGH",
+   "category": "Website",
+   "confidence": 0.92,
+   "date": "2025-08-01",
+   "evidence": "https://example.com/conversion-analytics.png",
+   "suggestedAction": "Check checkout flow and recent site changes immediately."
+ },
+ {
+   "id": 4,
+   "title": "Customer support tickets increased 40% for Product B",
+   "priority": "HIGH",
+   "category": "Support",
+   "confidence": 0.89,
+   "date": "2025-08-02",
+   "evidence": "https://example.com/support-ticket-trends.png",
+   "suggestedAction": "Investigate Product B quality issues and prepare FAQ update."
+ },
+ {
+   "id": 5,
+   "title": "Email open rates improving after subject line A/B test",
+   "priority": "LOW",
+   "category": "Marketing",
+   "confidence": 0.76,
+   "date": "2025-08-01",
+   "evidence": "https://example.com/email-performance.png",
+   "suggestedAction": "Apply winning subject line format to all campaigns."
+ },
+ {
+   "id": 6,
+   "title": "Competitor launched similar product at 20% lower price",
+   "priority": "MID",
+   "category": "Competition",
+   "confidence": 0.94,
+   "date": "2025-07-30",
+   "evidence": "https://example.com/competitor-pricing-analysis.png",
+   "suggestedAction": "Review pricing strategy and highlight unique value propositions."
+ },
+ {
+   "id": 7,
+   "title": "Social media engagement down 25% since algorithm change",
+   "priority": "MID",
+   "category": "Marketing",
+   "confidence": 0.83,
+   "date": "2025-07-29",
+   "evidence": "https://example.com/social-engagement-chart.png",
+   "suggestedAction": "Adapt content strategy for new Instagram algorithm requirements."
+ },
+ {
+   "id": 8,
+   "title": "Return rate for SKU-C45 exceeds 12% threshold",
+   "priority": "HIGH",
+   "category": "Quality",
+   "confidence": 0.91,
+   "date": "2025-08-02",
+   "evidence": "https://example.com/return-rate-analysis.png",
+   "suggestedAction": "Halt SKU-C45 production and investigate manufacturing defects."
+ },
+ {
+   "id": 9,
+   "title": "New supplier offering 15% cost reduction on materials",
+   "priority": "LOW",
+   "category": "Operations",
+   "confidence": 0.78,
+   "date": "2025-08-01",
+   "evidence": "https://example.com/supplier-quote-comparison.png",
+   "suggestedAction": "Schedule quality assessment meeting with new supplier next week."
+ },
+ {
+   "id": 10,
+   "title": "Mobile app crash rate increased to 3.2% after latest update",
+   "priority": "HIGH",
+   "category": "Technology",
+   "confidence": 0.95,
+   "date": "2025-08-03",
+   "evidence": "https://example.com/app-stability-metrics.png",
+   "suggestedAction": "Rollback app update and investigate crash logs immediately."
+ },
+ {
+   "id": 11,
+   "title": "Seasonal demand pattern suggests inventory surge needed",
+   "priority": "MID",
+   "category": "Inventory",
+   "confidence": 0.84,
+   "date": "2025-08-02",
+   "evidence": "https://example.com/seasonal-demand-forecast.png",
+   "suggestedAction": "Increase inventory by 30% for back-to-school season."
+ },
+ {
+   "id": 12,
+   "title": "Positive sentiment spike after influencer partnership announcement",
+   "priority": "LOW",
+   "category": "Marketing",
+   "confidence": 0.79,
+   "date": "2025-08-01",
+   "evidence": "https://example.com/sentiment-analysis-chart.png",
+   "suggestedAction": "Amplify partnership content across all marketing channels."
+ }
+]

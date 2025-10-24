@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "Low inventory for SKU‑B23 in Warehouse A",
+    "priority": "HIGH",
+    "category": "Inventory",
+    "confidence": 0.93,
+    "date": "2025‑08‑04",
+    "evidence": "https://dash.example.com/inventory/SKU‑B23/status.png",
+    "suggestedAction": "Reorder 300 units immediately; target lead time is 5 days."
+  },
+  {
+    "id": 2,
+    "title": "30‑day late shipment rate rose above 4% for regional vendor EU‑PS1",
+    "priority": "HIGH",
+    "category": "Fulfillment",
+    "confidence": 0.88,
+    "date": "2025‑08‑03",
+    "evidence": "https://dash.example.com/fulfillment/EU‑PS1/late‑shipment.png",
+    "suggestedAction": "Reach out to vendor; expedite outstanding orders and confirm shipment timestamps."
+  },
+  {
+    "id": 3,
+    "title": "Spike in refund requests for product XYZ during June sale",
+    "priority": "MID",
+    "category": "Customer Service",
+    "confidence": 0.79,
+    "date": "2025‑08‑04",
+    "evidence": "https://dash.example.com/returns/XYZ/refund‑trend.png",
+    "suggestedAction": "Audit refund reasons and contact customer service to check for product defects."
+  },
+  {
+    "id": 4,
+    "title": "Cart abandon rate jumped 20% during quick‑checkout A/B test",
+    "priority": "MID",
+    "category": "Marketing",
+    "confidence": 0.81,
+    "date": "2025‑08‑02",
+    "evidence": "https://dash.example.com/abandonment/checkout‑AB‑test.png",
+    "suggestedAction": "Pause experiment and run qualitative user testing on checkout flow."
+  },
+  {
+    "id": 5,
+    "title": "Price mismatch detected: product C123 listed lower on Channel Z",
+    "priority": "HIGH",
+    "category": "Pricing",
+    "confidence": 0.85,
+    "date": "2025‑08‑03",
+    "evidence": "https://dash.example.com/pricing/C123/mismatch‑report.png",
+    "suggestedAction": "Match Channel Z price to channel average to prevent arbitrage complaints."
+  },
+  {
+    "id": 6,
+    "title": "Back‑in‑stock signal for SKU‑D56 with notification opt‑ins",
+    "priority": "LOW",
+    "category": "Inventory",
+    "confidence": 0.72,
+    "date": "2025‑08‑01",
+    "evidence": "https://dash.example.com/inventory/D56/back‑instock.png",
+    "suggestedAction": "Notify wish‑listed users and consider running a micro‑sms campaign."
+  },
+  {
+    "id": 7,
+    "title": "Search ranking for \"eco‑sneakers\" dropped below page 2",
+    "priority": "MID",
+    "category": "SEO",
+    "confidence": 0.75,
+    "date": "2025‑07‑31",
+    "evidence": "https://dash.example.com/seo/eco‑sneakers/ranking‑chart.png",
+    "suggestedAction": "Review content meta tags and increase high‑intent backlinks."
+  },
+  {
+    "id": 8,
+    "title": "Orders failed sync: Channel API timeout on 2025‑08‑03",
+    "priority": "HIGH",
+    "category": "Technical",
+    "confidence": 0.90,
+    "date": "2025‑08‑04",
+    "evidence": "https://dash.example.com/logs/sync/error‑timeout‑2025‑08‑03.png",
+    "suggestedAction": "Alert devops; retry batch sync with exponential back‑off."
+  },
+  {
+    "id": 9,
+    "title": "Competitor listing for SKU‑A12 undercut price by 15%",
+    "priority": "MID",
+    "category": "Competitive Intelligence",
+    "confidence": 0.82,
+    "date": "2025‑08‑02",
+    "evidence": "https://dash.example.com/competitor/A12/price‑surveillance.png",
+    "suggestedAction": "Launch price match campaign or highlight unique bundle promotions."
+  },
+  {
+    "id": 10,
+    "title": "Inbound stock audit mismatch > 10% for perishable item F‑900",
+    "priority": "MID",
+    "category": "Inventory",
+    "confidence": 0.76,
+    "date": "2025‑08‑03",
+    "evidence": "https://dash.example.com/audit/F‑900/mismatch‑report.png",
+    "suggestedAction": "Investigate receiving dock; re‑count and adjust system inventory."
+  }
+]
